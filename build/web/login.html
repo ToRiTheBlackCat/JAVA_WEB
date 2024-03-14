@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <style>
+            h1{
+                color: #fffa88;
+                margin-left: 90px;
+            }
+            #login_div{
+                background-image: linear-gradient(45deg, #9e50e1, #ff91e7);
+                border-radius: 15px 60px;
+                border: 2px solid black;
+                width: 28%;
+                
+                padding-bottom: 15px;
+                padding-top: 10px;
+            }
+            #un, #pw,#signup{
+                color: #33ffa4;
+                font-weight: 400;
+            }
+            .click{
+                background-color: #f5c44f;
+                border-radius: 15px;
+                width: 60px;
+                height: 30px;
+            }
+            
+            .click:hover{
+                background-color: #d74061;
+                font-weight: 500;
+                
+            }
+            .click:active{
+                color: white;
+                background-color: #8433c3;
+            }
+            #table{
+                margin-left: 15px;
+            }
+            #BookStore_div{
+                background-image: linear-gradient(45deg, #9e50e1, #ff91e7);
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 28%;
+                height: 35px;
+                padding: 10px 0 10px;
+            }
+            #BookStore_div a{
+                margin: auto;
+                margin-left: 50px;
+                color: white;
+                font-size: 20px;   
+            }
+        </style>
+        <div id="login_div"> 
+            <h1 >LOGIN PAGE</h1>
+            <table id="table">
+                <form method="POST" action="MainController">
+                    <tr>
+                        <td id="un">USERNAME</td> 
+                        <td><input type="text" name="txtUsername" /></td>
+                    </tr>
+                    <tr>    
+                        <td id="pw">PASSWORD</td>
+                        <td><input type="password" name="txtPassword"  /></td> 
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td><input class="click" type="submit" name="btAction" value="Login"   />
+                            <input class="click" type="reset" value="Reset" /></td>
+                    </tr>
+                </form>
+                <tr>
+                    <td id="signup"> Not have account yet?</td> 
+                    <td><span><a style="color:orange" href="SignUp.html">Sign Up</a></span></td>
+                </tr>
+            </table> 
+           
+        </div>  
+        <br/>
+        <div id="BookStore_div" >
+              <a href="BookStore.html">Click here to go to the BookStore</a>   
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+

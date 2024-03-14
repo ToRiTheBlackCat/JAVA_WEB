@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BOOK STORE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        #bkstore{
+            background-image: linear-gradient(45deg, #9e50e1, #ff91e7);
+            border-radius: 15px 60px;
+            border: 2px solid black;
+            width: 25%;
+            padding: 10px 10px 0 10px;
+        }
+        #bkstore_con{
+            display: grid;
+            justify-content: center;
+        }
+        td{
+            color: #33ffa4;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        form{
+            height: 70px;
+        }
+        h1{
+            color: #fffa88;
+            margin: auto;
+        }
+        .click{
+            background-color: #f5c44f;
+            border-radius: 15px;
+            height: 25px;
+        }
+        .click2{
+            background-color: #ee5aff;
+            border-radius: 15px;
+            height: 25px;
+            color:white;
+        }
+        .click:hover{
+            background-color: #d74061;
+            font-weight: 500;
+
+        }
+        .click:active{
+            color: white;
+            background-color: #8433c3;
+        }
+    </style>
+    <body>
+        <div id="bkstore">
+            <div id="bkstore_con" >
+                <h1>Book Store </h1>
+                <form  action="MainController" method="POST">
+                    <table >
+
+                        <tbody>
+                            <tr>
+                                <td>Choose Book </td>
+                                <td> 
+                                   
+                                    <select class="click2" name="cbBook">
+                                            <option>JAVASCRIPT</option>
+                                            <option>C++</option>
+                                            <option>JAVA</option>
+                                            <option>RUBY</option>
+                                            <option>GOLANG</option>
+                                            <option>SWIFT</option>
+                                        </select>
+                                    </div
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> <input class="click" type="submit" value="Add Book To Cart" name="btAction" /></td>
+                                <td>  <input class="click" type="submit" value="View Cart" name="btAction" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                    <br/>
+                    <br/>
+
+
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
